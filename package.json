@@ -1,6 +1,6 @@
 {
   "name": "page-snitch",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Tool to check a secure webpage or optionally crawl a secure site looking for any content not being served using HTTPS.",
   "main": "snitch.js",
   "scripts": {
