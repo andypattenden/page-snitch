@@ -26,5 +26,13 @@
     "mixed",
     "content",
     "security"
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andypattenden/page-snitch.git"
+  },
+  "bugs": {
+    "url": "https://github.com/andypattenden/page-snitch/issues"
+  },
+  "homepage": "https://github.com/andypattenden/page-snitch#readme"
 }
