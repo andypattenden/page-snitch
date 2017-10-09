@@ -16,19 +16,19 @@ npm install
 
 ### Single Page Test
 ```bash
-npm snitch -- --url=https://www.example.com/page/to/test
+npm run snitch -- --url=https://www.example.com/page/to/test
 ```
 
 ### Entire site
 By default the snitch will only check the page at the URL given. To spider a site and check all pages use the following command:
 ```bash
-npm snitch -- --url=https://www.example.com --crawl
+npm run snitch -- --url=https://www.example.com --crawl
 ```
 
 ### Log all Requests
 By default, only insecure resource requests are logged to the console. To log all requests, use the following command.
 ```bash
-npm snitch -- --url=https://www.example.com --logAllRequests
+npm run snitch -- --url=https://www.example.com --logAllRequests
 ```
 
 ### Parameters
