@@ -1,6 +1,6 @@
 # Page Snitch
 
-Tool to check a secure webpage or optionally crawl a secure site looking for any content not being served using HTTPS.
+Tool to check a secure webpage or optionally crawl a secure site looking for any content not being served using HTTPS. It will also check forms are being submitted using HTTPS and Iframes loaded using HTTPS (it will not check the iframe source for mixed content).
 
 ## Requirements
 * [NodeJS](http://nodejs.org) 8+
@@ -35,5 +35,9 @@ npm snitch -- --url=https://www.example.com --logAllRequests
 * `--url=https://www.example.com` the url of the page to check
 * `--crawl` (optional, defaults to `false`) tells the checker to crawl the site from the url given
 * `--logAllRequests` (optional, defaults to `false`) outputs all requests to the console. By default only mixed content requests are logged
+* `--ignoreForms` (optional, defaults to `false`) prevents checking of form action attributes
+* `--ignoreIframes` (optional, defaults to `false`) prevent checking of iframe source attributes
 
 
+## Limitations
+Can only test pages accessible via a URL. Pages accessed through POST requests won't be tested.
