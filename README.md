@@ -34,6 +34,13 @@ By default, only insecure resource requests are logged to the console. To log al
 npm run snitch -- --url=https://www.example.com --logAllRequests
 ```
 
+### Ignore SSL Errors
+PhantomJS will return an about:blank page if any SSL errors are encountered, this can be resolved by using the following command.
+```bash
+npm run snitch-ignore-ssl-errors -- --url=https://www.example.com/page/to/test
+```
+The above command can be used in conjunction with all other parameters.
+
 ### Parameters
 * `--url=https://www.example.com` the url of the page to check
 * `--crawl` (optional, defaults to `false`) tells the checker to crawl the site from the url given
