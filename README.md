@@ -8,7 +8,10 @@ Tool to check a secure webpage or optionally crawl a secure site looking for any
 
 ## Installation
 
+Download or clone the repo
 ```bash
+git clone git@github.com:andypattenden/page-snitch.git
+cd page-snitch
 npm install
 ```
 
@@ -37,7 +40,9 @@ npm run snitch -- --url=https://www.example.com --logAllRequests
 * `--logAllRequests` (optional, defaults to `false`) outputs all requests to the console. By default only mixed content requests are logged
 * `--ignoreForms` (optional, defaults to `false`) prevents checking of form action attributes
 * `--ignoreIframes` (optional, defaults to `false`) prevent checking of iframe source attributes
+* `--verbose` (optional, defaults to `false`) logs information to console
+* `--logLevel=[debug|info|warning|error]` (optional, defaults to `error`) changes log level
 
 
 ## Limitations
-Can only test pages accessible via a URL. Pages accessed through POST requests won't be tested.
+Can only test pages accessible via a GET. Pages accessed through POST requests won't be tested.

@@ -16,6 +16,9 @@ var casper = require("casper").create(),
   totalPagesWithMixedContent = 0,
   isCurrentPageSecure = true;
 
+casper.options.verbose = casper.cli.get("verbose") || false;
+casper.options.logLevel = casper.cli.get("logLevel") || "error";
+
 // Set the start URL
 if (!casper.cli.has("url")) {
   casper.echo("No start URL specified, use --url", "ERROR");

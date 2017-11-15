@@ -4,7 +4,8 @@
   "description": "Tool to check a secure webpage or optionally crawl a secure site looking for any content not being served using HTTPS.",
   "main": "snitch.js",
   "scripts": {
-    "snitch": "node_modules/casperjs/bin/casperjs snitch.js"
+    "snitch": "node_modules/casperjs/bin/casperjs snitch.js",
+    "snitch-ignore-ssl-errors": "node_modules/casperjs/bin/casperjs --ignore-ssl-errors=true snitch.js"
   },
   "engines": {
     "node": ">=8.6.0"
@@ -13,13 +14,13 @@
   "license": "MIT",
   "dependencies": {
     "casperjs": "^1.1.4",
-    "phantomjs-prebuilt": "^2.1.15"
+    "phantomjs-prebuilt": "^2.1.16"
   },
   "devDependencies": {
-    "eslint": "^4.8.0",
-    "eslint-config-prettier": "^2.6.0",
+    "eslint": "^4.11.0",
+    "eslint-config-prettier": "^2.7.0",
     "eslint-plugin-prettier": "^2.3.1",
-    "prettier": "^1.7.4"
+    "prettier": "^1.8.2"
   },
   "keywords": [
     "https",
