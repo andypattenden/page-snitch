@@ -98,7 +98,7 @@ function filterLinks(url, urlsToFilter) {
 function getFormActions(page) {
   return page.evaluate(function() {
     return __utils__.findAll("form").map(function(e) {
-      return e.action;
+      return e.getAttribute("action");
     });
   });
 }
